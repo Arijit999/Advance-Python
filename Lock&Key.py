@@ -2,9 +2,8 @@ import threading
 import time
 
 '''
-If lock is there then it will create 
-a deadlock condition as one thread increases 
-a value and other tryes to decrease.
+If lock is there then it will race condition as one 
+thread increases a value and other tryes to decrease.
 ''' 
 # Uncomment to enable lock
 shared_resource = 5
